@@ -1,0 +1,14 @@
+[2016-04-08 14:19:58] test_SizeSetting.py [Test Case:test_SizeSetting] [line:29]INFO:~~~尺码配置模块测试~~~
+[2016-04-08 14:20:08] test_SizeSetting.py [Test Case:to_SizeSetting] [line:54]INFO:等待页面刷新···
+[2016-04-08 14:20:10] test_SizeSetting.py [Test Case:to_SizeSetting] [line:57]INFO:刷新完成！！！
+[2016-04-08 14:20:14] test_SizeSetting.py [Test Case:tearDown] [line:291]INFO:该条用例执行完毕！！！
+[2016-04-08 14:20:18] test_SizeSetting.py [Test Case:test_3modify_Size] [line:223]INFO:开始执行用例...
+[2016-04-08 14:20:24] test_SizeSetting.py [Test Case:to_SizeSetting] [line:54]INFO:等待页面刷新···
+[2016-04-08 14:20:25] test_SizeSetting.py [Test Case:to_SizeSetting] [line:57]INFO:刷新完成！！！
+[2016-04-08 14:20:35] test_SizeSetting.py [Test Case:tearDown] [line:291]INFO:该条用例执行完毕！！！
+[2016-04-08 14:20:39] test_SizeSetting.py [Test Case:test_4delete_Size] [line:265]INFO:开始执行用例...
+[2016-04-08 14:20:45] test_SizeSetting.py [Test Case:to_SizeSetting] [line:54]INFO:等待页面刷新···
+[2016-04-08 14:20:45] test_SizeSetting.py [Test Case:to_SizeSetting] [line:57]INFO:刷新完成！！！
+[2016-04-08 14:20:49] test_SizeSetting.py [Test Case:test_4delete_Size] [line:276]INFO:等待页面刷新···
+[2016-04-08 14:20:49] test_SizeSetting.py [Test Case:test_4delete_Size] [line:278]INFO:刷新完成！！！
+[2016-04-08 14:20:52] test_SizeSetting.py [Test Case:tearDown] [line:291]INFO:该条用例执行完毕！！！

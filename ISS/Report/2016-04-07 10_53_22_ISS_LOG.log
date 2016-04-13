@@ -1,0 +1,6 @@
+[2016-04-07 10:53:22] test_OfflinePromotion.py [Test Case:test_OfflinePromotion] [line:28]INFO:~~~线下促销模块测试~~~
+[2016-04-07 10:53:22] test_OfflinePromotion.py [Test Case:<module>] [line:1106]INFO:test_OnlinePromotion start--
+[2016-04-07 10:53:30] test_OfflinePromotion.py [Test Case:to_OfflinePromotion] [line:54]INFO:等待页面刷新···
+[2016-04-07 10:53:31] test_OfflinePromotion.py [Test Case:to_OfflinePromotion] [line:56]INFO:刷新完成！！！
+[2016-04-07 10:54:18] test_OfflinePromotion.py [Test Case:tearDown] [line:1096]INFO:该条用例执行执行完毕！！！
+[2016-04-07 10:54:19] test_OfflinePromotion.py [Test Case:<module>] [line:1151]INFO:test_DefaultExpress end--

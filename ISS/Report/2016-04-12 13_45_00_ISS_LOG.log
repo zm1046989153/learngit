@@ -1,0 +1,27 @@
+[2016-04-12 13:45:00] test_ColorGroup.py [Test Case:test_ColorGroup] [line:28]INFO:~~~颜色组模块测试~~~
+[2016-04-12 13:45:00] test_ColorGroup.py [Test Case:<module>] [line:324]INFO:test_EmployeeInfo start--
+[2016-04-12 13:45:04] test_ColorGroup.py [Test Case:test_0add_ColorGroup] [line:144]INFO:开始执行测试...
+[2016-04-12 13:45:09] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:45:09] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:45:14] test_ColorGroup.py [Test Case:clickButton] [line:128]INFO:保存成功！
+[2016-04-12 13:45:14] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！
+[2016-04-12 13:45:24] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:45:24] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:45:29] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！
+[2016-04-12 13:45:34] test_ColorGroup.py [Test Case:test_2search_ByCGroupName] [line:220]INFO:开始执行测试...
+[2016-04-12 13:45:38] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:45:39] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:45:45] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！
+[2016-04-12 13:45:50] test_ColorGroup.py [Test Case:test_3modify_ColorGroup] [line:245]INFO:开始执行测试...
+[2016-04-12 13:45:54] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:45:55] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:46:05] test_ColorGroup.py [Test Case:clickButton] [line:128]INFO:保存成功！
+[2016-04-12 13:46:05] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！
+[2016-04-12 13:46:10] test_ColorGroup.py [Test Case:test_4import_ColorGroup] [line:283]INFO:开始执行测试...
+[2016-04-12 13:46:14] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:46:15] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:46:17] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！
+[2016-04-12 13:46:26] test_ColorGroup.py [Test Case:to_ColorGroup] [line:52]INFO:等待页面刷新···
+[2016-04-12 13:46:26] test_ColorGroup.py [Test Case:to_ColorGroup] [line:55]INFO:刷新完成！！！
+[2016-04-12 13:46:35] test_ColorGroup.py [Test Case:clickButton] [line:102]INFO:删除成功
+[2016-04-12 13:46:35] test_ColorGroup.py [Test Case:tearDown] [line:314]INFO:该条用例执行完毕！！！

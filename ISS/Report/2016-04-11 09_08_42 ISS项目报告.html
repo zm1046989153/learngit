@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>thread4测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>thread4测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2016-04-11 09:08:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:23:51.195000</p>
+<p class='attribute'><strong>Status:</strong> Pass 33 Failure 7 Error 13</p>
+
+<p class='description'>用例执行情况：</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_OfflinePromotion.test_OfflinePromotion</td>
+    <td>22</td>
+    <td>14</td>
+    <td>3</td>
+    <td>5</td>
+    <td><a href="javascript:showClassDetail('c1',22)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_0add_Promotion: 添加促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_1search_byKeyWord: 按关键字查找促销</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        fail</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 348, in test_1search_byKeyWord
+    self.assertEqual(allre,findCss(driver,"#content &gt; div.tabs-panels.tabs-panels-noborder &gt; div:nth-child(2) div.datagrid-pager.pagination &gt; div.pagination-info").text)
+AssertionError: u'\u663e\u793a0\u52300\u6761, \u51710\u6761\u8bb0\u5f55' != u'\u663e\u793a1\u523020\u6761, \u517168\u6761\u8bb0\u5f55'
+- æ¾ç¤º0å°0æ¡, å±0æ¡è®°å½
+?   ^      ^
++ æ¾ç¤º1å°20æ¡, å±68æ¡è®°å½
+?   ^ +     ^^
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_2search_byActivityTime: 按活动时间查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_3search_byApplicableObject: 按适用对象查找</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        fail</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 435, in test_3search_byApplicableObject
+    searchAssert(self,objs,obj)
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 173, in searchAssert
+    self.assertIn(assert_text,path.text)
+AssertionError: u'\u4e5d\u7267\u738b' not found in u''
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_4search_byMakeDate: 按制单日期查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_5search_byIdentifyDocument: 按单据标识查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_6search_byPromotionType: 按促销类型查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_7modify_Promotion: 修改促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_8modify_AddRedemption_com: 添加换购品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9')" >
+        error</a>
+
+    <div id='div_ft1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.9: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 570, in test_8modify_AddRedemption_com
+    findCss(driver,"#salePmOfflineDtChangePurchaseToolbar &gt; a.easyui-linkbutton.appendDataButton &gt; span &gt; span").click()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: Element is not clickable at point (294, 309). Other element would receive the click: &lt;div class="datagrid-mask" style="display:block"&gt;&lt;/div&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_9modify_AddTriggerPoint: 添加业务触发点</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_amodify_DeleteTriggerPoint: 删除业务触发点</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_bmodify_DeleteRedemption_com: 删除换购品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.12')" >
+        error</a>
+
+    <div id='div_ft1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.12: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 730, in test_bmodify_DeleteRedemption_com
+    findCss(driver,"#salePmOfflineDtChangepurchaseAccordion div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmOfflineDtChangepurchaseAccordion div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmp1rzlyt/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmp1rzlyt/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cmodify_AddSuitObject: 添加适用对象</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dmodify_DeleteSuitObject: 删除适用对象</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emodify_Add_TimeConstraint: 添加时段约束</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_fmodify_Delete_TimeConstraint: 删除时段约束</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_gmodify_AddPromotion_com: 添加促销商品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.17')" >
+        error</a>
+
+    <div id='div_ft1.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.17: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 887, in test_gmodify_AddPromotion_com
+    findCss(driver,"#salePmOfflineDtPartToolbar &gt; a.easyui-linkbutton.appendDataButton &gt; span &gt; span").click()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: Element is not clickable at point (294, 309). Other element would receive the click: &lt;div class="datagrid-mask" style="display:block"&gt;&lt;/div&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_hmodify_DeletePromotion_com: 删除促销商品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18')" >
+        error</a>
+
+    <div id='div_ft1.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.18: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 954, in test_hmodify_DeletePromotion_com
+    findCss(driver,"#salePmOfflineDtPartAccordion &gt; div &gt; div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmOfflineDtPartAccordion &gt; div &gt; div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmpcgiryc/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmpcgiryc/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.19' class='none'>
+    <td class='failCase'><div class='testcase'>test_imodify_AddPayment: 添加结算方式</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.19')" >
+        fail</a>
+
+    <div id='div_ft1.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.19: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 1011, in test_imodify_AddPayment
+    self.Delete_And_Add_Assert('add')
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 83, in Delete_And_Add_Assert
+    self.assertEqual(u"ä¿å­æåï¼",driver.find_element_by_css_selector("body &gt; div.panel.window.messager-window &gt; div.messager-body.panel-body.panel-body-noborder.window-body &gt; div:nth-child(2)").text)
+AssertionError: u'\u4fdd\u5b58\u6210\u529f\uff01' != u'\u8bf7\u5c06\u5f53\u524d\u7f16\u8f91\u884c\u6570\u636e\u586b\u5199\u5b8c\u6574 [truncated]...
+- ä¿å­æåï¼
++ è¯·å°å½åç¼è¾è¡æ°æ®å¡«åå®æ´ä¹ååæ·»å 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_jdelete_DeletePayment: 删除结算方式</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.20')" >
+        error</a>
+
+    <div id='div_ft1.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.20: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotion.py", line 1028, in test_jdelete_DeletePayment
+    findCss(driver,"#salePmOfflineDtPaymentToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body  td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmOfflineDtPaymentToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body  td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmpxlo_sh/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmpxlo_sh/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_kdelete_Promotion: 删除促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_lmodify_ApprovalStatus: 修改审批状态</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='failClass'>
+    <td>test_OfflinePromotionRelation.test_OfflinePromotionRelation</td>
+    <td>4</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',4)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_0search_byPromotionTheme: 按促销主题查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_3search_byDocumentCode: 按单据编号查找</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        fail</a>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotionRelation.py", line 188, in test_3search_byDocumentCode
+    self.searchassert(cd1s,cd2s,doc_code)
+  File "D:\ISS\Test_Cases\thread4\test_OfflinePromotionRelation.py", line 120, in searchassert
+    self.assertTrue(a,'Seach Failed!!!'+theme)
+AssertionError: Seach Failed!!!PM201603240002
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_4button_Mutual: 互容操作</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_5button_Mutex: 互斥操作</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_OnlinePromotion.test_OnlinePromotion</td>
+    <td>23</td>
+    <td>12</td>
+    <td>3</td>
+    <td>8</td>
+    <td><a href="javascript:showClassDetail('c3',23)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_0add_Promotion: 添加促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_1search_byKeyWord: 按关键字查找促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_2search_byActivityTime: 按活动时间查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_3search_byApplicableObject: 按适用对象查找</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+        fail</a>
+
+    <div id='div_ft3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.4: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 418, in test_3search_byApplicableObject
+    searchAssert(self,objs,obj)
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 173, in searchAssert
+    self.assertIn(assert_text,path.text)
+AssertionError: u'\u4e5d\u7267\u738b' not found in u''
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_4search_byMakeDate: 按制单日期查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_5search_byIdentifyDocument: 按单据标识查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_6search_byPromotionType: 按促销类型查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_7modify_Promotion: 修改促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft3.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_8modify_AddSuitObject: 添加适用对象</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.9')" >
+        error</a>
+
+    <div id='div_ft3.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.9: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 552, in test_8modify_AddSuitObject
+    findCss(driver,"#salePmSuitObjectToolbar &gt; a.easyui-linkbutton.addButton &gt; span &gt; span").click()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: Element is not clickable at point (231, 389). Other element would receive the click: &lt;div class="datagrid-mask" style="display:block"&gt;&lt;/div&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_9modify_DeleteSuitObject: 删除适用对象</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.10')" >
+        error</a>
+
+    <div id='div_ft3.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.10: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 585, in test_9modify_DeleteSuitObject
+    findCss(driver,"#salePmOnlineHdTabs &gt; div.tabs-panels.tabs-panels-noborder &gt; div:nth-child(1)  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmOnlineHdTabs &gt; div.tabs-panels.tabs-panels-noborder &gt; div:nth-child(1)  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmp9pgbhy/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmp9pgbhy/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_amodify_Add_TimeConstraint: 添加时段约束</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_bmodify_Delete_TimeConstraint: 删除时段约束</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft3.13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_cmodify_AddPromotion_com: 添加促销商品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.13')" >
+        error</a>
+
+    <div id='div_ft3.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.13: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 664, in test_cmodify_AddPromotion_com
+    findCss(driver,"#salePmDtPartToolbar &gt; a.easyui-linkbutton.appendDataButton &gt; span &gt; span").click()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: Element is not clickable at point (302, 393). Other element would receive the click: &lt;div class="datagrid-mask" style="display:block"&gt;&lt;/div&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dmodify_DeletePromotion_com: 删除促销商品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.14')" >
+        error</a>
+
+    <div id='div_ft3.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.14: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 731, in test_dmodify_DeletePromotion_com
+    findCss(driver,"#salePmDtPartAccordion &gt; div &gt; div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmDtPartAccordion &gt; div &gt; div.panel.datagrid  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmpwemos7/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmpwemos7/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emodify_AddRedemption_com: 添加换购品</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_fmodify_DeleteRedemption_com: 删除换购品</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft3.17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_gmodify_AddDonation: 添加赠品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.17')" >
+        error</a>
+
+    <div id='div_ft3.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.17: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 884, in test_gmodify_AddDonation
+    findCss(driver,"#salePmDtGiftToolbar &gt; a.easyui-linkbutton.appendDataButton &gt; span &gt; span").click()
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: Element is not clickable at point (234, 393). Other element would receive the click: &lt;div class="datagrid-mask" style="display:block"&gt;&lt;/div&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_hmodify_DeleteDonation: 删除赠品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.18')" >
+        error</a>
+
+    <div id='div_ft3.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.18: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 955, in test_hmodify_DeleteDonation
+    findCss(driver,"#salePmDtGiftAccordion  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmDtGiftAccordion  div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmp7rkyjn/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmp7rkyjn/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.19' class='none'>
+    <td class='failCase'><div class='testcase'>test_imodify_AddTriggerPoint: 添加业务触发点</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.19')" >
+        fail</a>
+
+    <div id='div_ft3.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.19: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 1041, in test_imodify_AddTriggerPoint
+    self.Delete_And_Add_Assert('add')
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 82, in Delete_And_Add_Assert
+    self.assertEqual(u"ä¿å­æåï¼",driver.find_element_by_css_selector("body &gt; div.panel.window.messager-window &gt; div.messager-body.panel-body.panel-body-noborder.window-body &gt; div:nth-child(2)").text)
+AssertionError: u'\u4fdd\u5b58\u6210\u529f\uff01' != u'\u6570\u636e\u672a\u586b\u5199\u5b8c\u6574\uff01'
+- ä¿å­æåï¼
++ æ°æ®æªå¡«åå®æ´ï¼
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_jmodify_DeleteTriggerPoint: 删除业务触发点</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.20')" >
+        error</a>
+
+    <div id='div_ft3.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.20: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 1059, in test_jmodify_DeleteTriggerPoint
+    findCss(driver,"#salePmDtTrgToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmDtTrgToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body &gt; table td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmp7phtsv/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmp7phtsv/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.21' class='none'>
+    <td class='failCase'><div class='testcase'>test_kmodify_AddPayment: 添加结算方式</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.21')" >
+        fail</a>
+
+    <div id='div_ft3.21' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.21').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.21: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 1102, in test_kmodify_AddPayment
+    self.Delete_And_Add_Assert('add')
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 82, in Delete_And_Add_Assert
+    self.assertEqual(u"ä¿å­æåï¼",driver.find_element_by_css_selector("body &gt; div.panel.window.messager-window &gt; div.messager-body.panel-body.panel-body-noborder.window-body &gt; div:nth-child(2)").text)
+AssertionError: u'\u4fdd\u5b58\u6210\u529f\uff01' != u'\u8bf7\u5c06\u5f53\u524d\u7f16\u8f91\u884c\u6570\u636e\u586b\u5199\u5b8c\u6574 [truncated]...
+- ä¿å­æåï¼
++ è¯·å°å½åç¼è¾è¡æ°æ®å¡«åå®æ´ä¹ååæ·»å 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_ldelete_DeletePayment: 删除结算方式</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.22')" >
+        error</a>
+
+    <div id='div_ft3.22' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.22').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.22: Traceback (most recent call last):
+  File "D:\ISS\Test_Cases\thread4\test_OnlinePromotion.py", line 1119, in test_ldelete_DeletePayment
+    findCss(driver,"#salePmDtPaymentToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body  td[field='ck']").click()
+  File "D:\ISS\Test_Cases\public\isspublic.py", line 116, in findCss
+    f=driver.find_element_by_css_selector(css)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 434, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 744, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"css selector","selector":"#salePmDtPaymentToolbar + div.datagrid-view &gt; div.datagrid-view2 &gt; div.datagrid-body  td[field='ck']"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/tmpovpkgt/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///c:/users/admini~1/appdata/local/temp/tmpovpkgt/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.23' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_mdelete_Promotion: 删除促销</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_OnlinePromotionRelation.test_OlinePromotionRelation</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',4)">Detail</a></td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_0search_byPromotionTheme: 按促销主题查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt4.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_3search_byDocumentCode: 按单据编号查找</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt4.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_4button_Mutual: 互容操作</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt4.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_5button_Mutex: 互斥操作</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>53</td>
+    <td>33</td>
+    <td>7</td>
+    <td>13</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

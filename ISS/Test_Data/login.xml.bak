@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<info>
+    <explain>ISS 项目登录</explain>
+        <url>http://192.168.1.172:8080/ISS10/index.jsp</url>
+        <login username="JOE_ADMIN" password="qs8888">登录中</login>
+        <code>ZM_Role</code>
+        <name>门店经理</name>
+       	<code>Zm_color</code>
+       	<color_name>Zm_Red</color_name>
+</info>
