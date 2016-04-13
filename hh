@@ -1,4 +1,0 @@
-ddd
-sa
-sdfa
-:wq
