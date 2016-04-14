@@ -1,0 +1,24 @@
+[2016-04-05 16:19:11] test_ConstantSetting.py [Test Case:test_ConstantSetting] [line:32]INFO:~~~常数配置模块测试~~~
+[2016-04-05 16:19:11] test_ConstantSetting.py [Test Case:<module>] [line:333]INFO:test_ConstantSetting start--
+[2016-04-05 16:19:19] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:19:20] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:19:25] test_ConstantSetting.py [Test Case:clickButton] [line:132]INFO:保存成功！
+[2016-04-05 16:19:25] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！
+[2016-04-05 16:19:34] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:19:34] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:19:38] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！
+[2016-04-05 16:19:46] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:19:46] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:19:49] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！
+[2016-04-05 16:19:58] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:19:58] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:20:04] test_ConstantSetting.py [Test Case:clickButton] [line:132]INFO:保存成功！
+[2016-04-05 16:20:04] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！
+[2016-04-05 16:20:13] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:20:14] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:20:21] test_ConstantSetting.py [Test Case:clickButton] [line:132]INFO:保存成功！
+[2016-04-05 16:20:23] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！
+[2016-04-05 16:20:32] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:58]INFO:等待页面刷新···
+[2016-04-05 16:20:32] test_ConstantSetting.py [Test Case:to_ConstantSetting] [line:61]INFO:刷新完成！！！
+[2016-04-05 16:20:38] test_ConstantSetting.py [Test Case:clickButton] [line:106]INFO:删除成功
+[2016-04-05 16:20:38] test_ConstantSetting.py [Test Case:tearDown] [line:323]INFO:该条用例执行完毕！！！

@@ -1,0 +1,20 @@
+[2016-04-13 09:23:56] test_CustomExpress.py [Test Case:test_CustomExpress] [line:26]INFO:~~~自定义快递模块测试~~~
+[2016-04-13 09:23:56] test_CustomExpress.py [Test Case:<module>] [line:512]INFO:test_CustomExpress start--
+[2016-04-13 09:24:18] test_CustomExpress.py [Test Case:to_CustomExpress] [line:51]INFO:等待页面刷新···
+[2016-04-13 09:24:21] test_CustomExpress.py [Test Case:to_CustomExpress] [line:54]INFO:刷新完成！！！
+[2016-04-13 09:24:35] test_CustomExpress.py [Test Case:test_2search_byExpressType] [line:365]INFO:等待页面刷新···
+[2016-04-13 09:24:35] test_CustomExpress.py [Test Case:test_2search_byExpressType] [line:369]INFO:刷新完成！！！
+[2016-04-13 09:24:36] test_CustomExpress.py [Test Case:tearDown] [line:502]INFO:该条用例执行完毕！！！
+[2016-04-13 09:24:47] test_CustomExpress.py [Test Case:to_CustomExpress] [line:51]INFO:等待页面刷新···
+[2016-04-13 09:24:49] test_CustomExpress.py [Test Case:to_CustomExpress] [line:54]INFO:刷新完成！！！
+[2016-04-13 09:24:58] test_CustomExpress.py [Test Case:test_3search_byStoreName] [line:398]INFO:等待页面刷新···
+[2016-04-13 09:24:58] test_CustomExpress.py [Test Case:test_3search_byStoreName] [line:402]INFO:刷新完成！！！
+[2016-04-13 09:24:58] test_CustomExpress.py [Test Case:tearDown] [line:502]INFO:该条用例执行完毕！！！
+[2016-04-13 09:25:09] test_CustomExpress.py [Test Case:to_CustomExpress] [line:51]INFO:等待页面刷新···
+[2016-04-13 09:25:12] test_CustomExpress.py [Test Case:to_CustomExpress] [line:54]INFO:刷新完成！！！
+[2016-04-13 09:25:19] test_CustomExpress.py [Test Case:clickButton] [line:133]INFO:保存成功！
+[2016-04-13 09:25:19] test_CustomExpress.py [Test Case:tearDown] [line:502]INFO:该条用例执行完毕！！！
+[2016-04-13 09:25:29] test_CustomExpress.py [Test Case:to_CustomExpress] [line:51]INFO:等待页面刷新···
+[2016-04-13 09:25:31] test_CustomExpress.py [Test Case:to_CustomExpress] [line:54]INFO:刷新完成！！！
+[2016-04-13 09:25:36] test_CustomExpress.py [Test Case:clickButton] [line:133]INFO:该快递编号已存在
+[2016-04-13 09:25:37] test_CustomExpress.py [Test Case:tearDown] [line:502]INFO:该条用例执行完毕！！！

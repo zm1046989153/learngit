@@ -1,0 +1,26 @@
+
+
+def searchAssert(self,paths,assert_text):
+        '''本函数用于对查找结果断言,提供断言路径和断言信息'''
+
+
+def funcButton(driver,button):
+    
+    '''点击各个按钮,并进行断言，需提供按钮名称'''
+
+
+def testModule(driver,module0,module):
+    '''
+    本函数用于自动进入全渠道后台要测试的模块，需提供大模块module0、小模块名称module
+
+
+各个线程测试的模块：
+hread1：会员信息、量体数据
+hread2：订制订单、量体工单
+hread3：商品档案、商品类别、人员信息、角色信息
+hread4：颜色配置、尺码配置、颜色组配置、尺码组配置
+hread5：常数配置、量体项目、SKU配置
+hread6：销售组织管理、支付帐号信息、人员信息、设备信息
+hread7：广告主题、BOM管理、默认快递、自定义快递
+hread8：线上促销、线下促销、线上促销关系、线下促销关系
+

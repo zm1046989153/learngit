@@ -1,0 +1,26 @@
+[2016-04-12 11:11:32] test_EmployeeInfo.py [Test Case:test_EmployeeInfo] [line:43]INFO:~~~人员信息模块测试~~~
+[2016-04-12 11:11:32] test_EmployeeInfo.py [Test Case:<module>] [line:835]INFO:test_EmployeeInfo start--
+[2016-04-12 11:11:37] test_EmployeeInfo.py [Test Case:test_6modify_LoginPasswdReset] [line:581]INFO:开始执行测试...
+[2016-04-12 11:11:41] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:67]INFO:等待页面刷新···
+[2016-04-12 11:11:43] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:70]INFO:刷新完成！！！
+[2016-04-12 11:11:44] test_EmployeeInfo.py [Test Case:searchbycode] [line:431]INFO:开始执行测试...
+[2016-04-12 11:12:02] test_EmployeeInfo.py [Test Case:tearDown] [line:827]INFO:该条用例执行完毕！！！
+[2016-04-12 11:12:07] test_EmployeeInfo.py [Test Case:test_7modify_RoleAssignment] [line:619]INFO:开始执行测试...
+[2016-04-12 11:12:13] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:67]INFO:等待页面刷新···
+[2016-04-12 11:12:14] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:70]INFO:刷新完成！！！
+[2016-04-12 11:12:16] test_EmployeeInfo.py [Test Case:searchbycode] [line:431]INFO:开始执行测试...
+[2016-04-12 11:12:26] test_EmployeeInfo.py [Test Case:test_7modify_RoleAssignment] [line:652]INFO:等待页面刷新···
+[2016-04-12 11:12:27] test_EmployeeInfo.py [Test Case:test_7modify_RoleAssignment] [line:655]INFO:刷新完成！！！
+[2016-04-12 11:12:39] test_EmployeeInfo.py [Test Case:test_7modify_RoleAssignment] [line:702]INFO:保存成功！
+[2016-04-12 11:12:42] test_EmployeeInfo.py [Test Case:searchbycode] [line:431]INFO:开始执行测试...
+[2016-04-12 11:12:49] test_EmployeeInfo.py [Test Case:tearDown] [line:827]INFO:该条用例执行完毕！！！
+[2016-04-12 11:12:54] test_EmployeeInfo.py [Test Case:test_8modify_Storedistribution] [line:719]INFO:开始执行测试...
+[2016-04-12 11:12:58] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:67]INFO:等待页面刷新···
+[2016-04-12 11:13:00] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:70]INFO:刷新完成！！！
+[2016-04-12 11:13:01] test_EmployeeInfo.py [Test Case:searchbycode] [line:431]INFO:开始执行测试...
+[2016-04-12 11:13:11] test_EmployeeInfo.py [Test Case:test_8modify_Storedistribution] [line:737]INFO:等待页面刷新···
+[2016-04-12 11:13:11] test_EmployeeInfo.py [Test Case:test_8modify_Storedistribution] [line:740]INFO:刷新完成！！！
+[2016-04-12 11:13:24] test_EmployeeInfo.py [Test Case:test_8modify_Storedistribution] [line:791]INFO:保存成功！
+[2016-04-12 11:13:27] test_EmployeeInfo.py [Test Case:searchbycode] [line:431]INFO:开始执行测试...
+[2016-04-12 11:13:34] test_EmployeeInfo.py [Test Case:tearDown] [line:827]INFO:该条用例执行完毕！！！
+[2016-04-12 11:13:35] test_EmployeeInfo.py [Test Case:<module>] [line:863]INFO:test_EmployeeInfo end--

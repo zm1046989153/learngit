@@ -1,0 +1,22 @@
+[2016-04-08 13:24:55] test_BOMManage.py [Test Case:test_BOMManager] [line:32]INFO:~~~BOM管理模块测试~~~
+[2016-04-08 13:24:55] test_BOMManage.py [Test Case:<module>] [line:346]INFO:test_BOMManager start--
+[2016-04-08 13:25:05] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:25:12] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:25:51] test_BOMManage.py [Test Case:clickButton] [line:138]INFO:保存成功！
+[2016-04-08 13:25:51] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！
+[2016-04-08 13:26:01] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:26:08] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:26:15] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！
+[2016-04-08 13:26:25] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:26:30] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:26:42] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！
+[2016-04-08 13:26:52] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:26:56] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:27:41] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！
+[2016-04-08 13:27:51] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:27:56] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:27:59] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！
+[2016-04-08 13:28:09] test_BOMManage.py [Test Case:to_BOMManager] [line:58]INFO:等待页面刷新···
+[2016-04-08 13:28:16] test_BOMManage.py [Test Case:to_BOMManager] [line:61]INFO:刷新完成！！！
+[2016-04-08 13:28:20] test_BOMManage.py [Test Case:clickButton] [line:110]INFO:删除成功
+[2016-04-08 13:28:20] test_BOMManage.py [Test Case:tearDown] [line:336]INFO:该条用例执行完毕！！！

@@ -1,0 +1,20 @@
+[2016-04-12 11:25:47] test_Organization.py [Test Case:test_Organization] [line:28]INFO:~~~销售组织管理模块测试~~~
+[2016-04-12 11:25:47] test_Organization.py [Test Case:<module>] [line:358]INFO:test_Organization start--
+[2016-04-12 11:25:56] test_Organization.py [Test Case:to_Organization] [line:55]INFO:等待页面刷新···
+[2016-04-12 11:25:57] test_Organization.py [Test Case:to_Organization] [line:58]INFO:刷新完成！！！
+[2016-04-12 11:26:09] test_Organization.py [Test Case:clickButton] [line:121]INFO:保存成功！
+[2016-04-12 11:26:09] test_Organization.py [Test Case:tearDown] [line:348]INFO:该条用例执行完毕！！！
+[2016-04-12 11:26:19] test_Organization.py [Test Case:to_Organization] [line:55]INFO:等待页面刷新···
+[2016-04-12 11:26:20] test_Organization.py [Test Case:to_Organization] [line:58]INFO:刷新完成！！！
+[2016-04-12 11:26:28] test_Organization.py [Test Case:tearDown] [line:348]INFO:该条用例执行完毕！！！
+[2016-04-12 11:26:37] test_Organization.py [Test Case:to_Organization] [line:55]INFO:等待页面刷新···
+[2016-04-12 11:26:38] test_Organization.py [Test Case:to_Organization] [line:58]INFO:刷新完成！！！
+[2016-04-12 11:26:43] test_Organization.py [Test Case:tearDown] [line:348]INFO:该条用例执行完毕！！！
+[2016-04-12 11:26:53] test_Organization.py [Test Case:to_Organization] [line:55]INFO:等待页面刷新···
+[2016-04-12 11:26:54] test_Organization.py [Test Case:to_Organization] [line:58]INFO:刷新完成！！！
+[2016-04-12 11:27:06] test_Organization.py [Test Case:clickButton] [line:121]INFO:保存成功！
+[2016-04-12 11:27:13] test_Organization.py [Test Case:tearDown] [line:348]INFO:该条用例执行完毕！！！
+[2016-04-12 11:27:22] test_Organization.py [Test Case:to_Organization] [line:55]INFO:等待页面刷新···
+[2016-04-12 11:27:23] test_Organization.py [Test Case:to_Organization] [line:58]INFO:刷新完成！！！
+[2016-04-12 11:27:35] test_Organization.py [Test Case:clickButton] [line:93]INFO:删除成功
+[2016-04-12 11:27:35] test_Organization.py [Test Case:tearDown] [line:348]INFO:该条用例执行完毕！！！

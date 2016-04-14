@@ -1,0 +1,4 @@
+[2016-04-12 18:06:09] test_EmployeeInfo.py [Test Case:test_EmployeeInfo] [line:43]INFO:~~~人员信息模块测试~~~
+[2016-04-12 18:06:09] test_EmployeeInfo.py [Test Case:<module>] [line:837]INFO:test_EmployeeInfo start--
+[2016-04-12 18:06:13] test_EmployeeInfo.py [Test Case:test_01add_Employee] [line:227]INFO:开始执行测试...
+[2016-04-12 18:06:18] test_EmployeeInfo.py [Test Case:tearDown] [line:829]INFO:该条用例执行完毕！！！

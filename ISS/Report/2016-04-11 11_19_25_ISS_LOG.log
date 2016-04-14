@@ -1,0 +1,16 @@
+[2016-04-11 11:19:25] test_OnlinePromotion.py [Test Case:test_OnlinePromotion] [line:29]INFO:~~~线上促销模块测试~~~
+[2016-04-11 11:19:25] test_OnlinePromotion.py [Test Case:<module>] [line:1206]INFO:test_OnlinePromotion start--
+[2016-04-11 11:19:29] test_OnlinePromotion.py [Test Case:test_emodify_AddRedemption_com] [line:763]INFO:开始执行用例...
+[2016-04-11 11:19:35] test_OnlinePromotion.py [Test Case:to_OnlinePromotion] [line:54]INFO:等待页面刷新···
+[2016-04-11 11:19:36] test_OnlinePromotion.py [Test Case:to_OnlinePromotion] [line:56]INFO:刷新完成！！！
+[2016-04-11 11:19:49] test_OnlinePromotion.py [Test Case:test_emodify_AddRedemption_com] [line:771]INFO:等待界面刷新~~~
+[2016-04-11 11:19:49] test_OnlinePromotion.py [Test Case:test_emodify_AddRedemption_com] [line:774]INFO:刷新完成！！！
+[2016-04-11 11:19:53] test_OnlinePromotion.py [Test Case:Delete_And_Add_Assert] [line:80]INFO:保存成功！
+[2016-04-11 11:20:00] test_OnlinePromotion.py [Test Case:Delete_And_Add_Assert] [line:80]INFO:保存成功！
+[2016-04-11 11:20:02] test_OnlinePromotion.py [Test Case:tearDown] [line:1196]INFO:该条用例执行执行完毕！！！
+[2016-04-11 11:20:11] test_OnlinePromotion.py [Test Case:to_OnlinePromotion] [line:54]INFO:等待页面刷新···
+[2016-04-11 11:20:12] test_OnlinePromotion.py [Test Case:to_OnlinePromotion] [line:56]INFO:刷新完成！！！
+[2016-04-11 11:20:30] test_OnlinePromotion.py [Test Case:Delete_And_Add_Assert] [line:72]INFO:删除成功
+[2016-04-11 11:20:33] test_OnlinePromotion.py [Test Case:Delete_And_Add_Assert] [line:72]INFO:删除成功
+[2016-04-11 11:20:33] test_OnlinePromotion.py [Test Case:tearDown] [line:1196]INFO:该条用例执行执行完毕！！！
+[2016-04-11 11:20:33] test_OnlinePromotion.py [Test Case:<module>] [line:1258]INFO:test_OnlinePromotion end--
