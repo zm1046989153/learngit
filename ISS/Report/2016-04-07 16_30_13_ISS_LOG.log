@@ -1,7 +1,0 @@
-[2016-04-07 16:30:13] test_Measure_WorkOrder.py [Test Case:test_Measure_WorkOrder] [line:35]INFO:~~~量体工单模块测试~~~
-[2016-04-07 16:30:17] test_Measure_WorkOrder.py [Test Case:test_0add_WorkOrder] [line:147]INFO:开始执行测试...
-[2016-04-07 16:30:21] test_Measure_WorkOrder.py [Test Case:to_measureWorkOrder] [line:713]INFO:等待页面刷新···
-[2016-04-07 16:30:31] test_Measure_WorkOrder.py [Test Case:to_measureWorkOrder] [line:715]INFO:刷新完成！！！
-[2016-04-07 16:30:37] test_Measure_WorkOrder.py [Test Case:test_0add_WorkOrder] [line:165]INFO:等待页面刷新···
-[2016-04-07 16:30:39] test_Measure_WorkOrder.py [Test Case:test_0add_WorkOrder] [line:167]INFO:刷新完成！！！
-[2016-04-07 16:30:56] test_Measure_WorkOrder.py [Test Case:tearDown] [line:722]INFO:该条用例执行完毕！！！

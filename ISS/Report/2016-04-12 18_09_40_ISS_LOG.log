@@ -1,8 +1,0 @@
-[2016-04-12 18:09:40] test_EmployeeInfo.py [Test Case:test_EmployeeInfo] [line:43]INFO:~~~人员信息模块测试~~~
-[2016-04-12 18:09:40] test_EmployeeInfo.py [Test Case:<module>] [line:840]INFO:test_EmployeeInfo start--
-[2016-04-12 18:09:45] test_EmployeeInfo.py [Test Case:test_6modify_LoginPasswdReset] [line:586]INFO:开始执行测试...
-[2016-04-12 18:09:49] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:67]INFO:等待页面刷新···
-[2016-04-12 18:09:51] test_EmployeeInfo.py [Test Case:to_EmployeeInformation] [line:70]INFO:刷新完成！！！
-[2016-04-12 18:09:52] test_EmployeeInfo.py [Test Case:searchbycode] [line:436]INFO:开始执行测试...
-[2016-04-12 18:10:12] test_EmployeeInfo.py [Test Case:tearDown] [line:832]INFO:该条用例执行完毕！！！
-[2016-04-12 18:10:13] test_EmployeeInfo.py [Test Case:<module>] [line:868]INFO:test_EmployeeInfo end--
